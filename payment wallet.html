@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- payment vallet 1st page.css -->
+    <link rel="stylesheet" href="./payment wallet.css">
+
+    <!-- below is link of google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+
+
+
+</head>
+<body id="bd"  onload="onLoadUserPage()">
+    <section id="section1">
+        <article id="article1">
+            <header id="header1">
+                <!-- //header -->
+                <div id="div1"><h1 id="welcomeH1">PAYMENT WALLET</h1></div>
+                <!-- <marquee behavior="alternate" scrollamount="20"></marquee> it is for moving <img id="jspLogo" src="./logo_jspiders.png">-->
+                
+                <!-- //create div and inside the div create table for multiple options navigation bar -->
+                <div>
+                <table id="table1">
+                    <tr id="tr1">
+                        <th class="thClass1" id="thAbout"  onclick="createAccount()">Create Account
+                            
+                        </th>
+                        <th class="thClass1" id="thContacts">Get Account
+                           
+                        </th>
+                        <th class="thClass1" id="thContacts" onclick="onclickUpdateAccountId()">Update Account</th>
+                        <th class="thClass1" id="thContacts" onclick="deleteAccount()">Delete Account</th>
+                        <th class="thClass1" id="thContacts" onclick="onclickPayment()" ondblclick="userdetails()">Payment</th>
+                    </tr>
+                </table>
+            </div>
+            <input id="signupButton" type="button" value="Signup" onclick="signup()">
+            <!-- <div id="arrowDiv"><img id="arrowImg" src="./arrow png.png" alt=""></div> -->
+            <!-- <marquee direction="right" scrollamount="30"></marquee> -->
+            </header>
+            <main>
+                <center>
+                <div id="userDiv">
+                    <span id="removingSpan1">
+                    
+                   <div id="avatardiv"> <i class="fa fa-user" id="avatar"></i></div>
+                   <div id="userdetails"><h1>USER DETAILES</h1></div>
+                    <h1><table>
+                         <tr Class="studentDetails" id="studentId"><td>Student Id<span class="studentDetails" id="studentId"></span></td><td>:</td></tr>
+                         <tr class="studentDetails" id="studentName"><td> Student Name<span class="studentDetails" id="studentName"></span></td><td>:</td></tr> 
+                         <tr class="studentDetails" id="studentPhNo" ><td>Student Phno<span id="studentPhNo" class="studentDetails"></span></td><td>:</td></tr>
+                        </table>
+                    </h1>
+                    </span>
+               </div>
+               </center>
+            </main>
+        </article>
+       
+
+    </section>
+    <div> <h1 class="playstore">Get It From</h1>
+        <img src="https://images.yourstory.com/assets/icons/badge_playstore_v2.svg" alt="playstore icon" " class="playstore" onclick="playstore()"></div>
+    <div class="social">SOCIAL MEDIA</div>
+    
+    <script src="./payment wallet.js"></script>
+    <!-- <script src="./saveAccountJSON.js"></script>
+    <script src="./updateAccountJSON.js"></script> -->
+    <!-- <script src="registerJSON.js"></script> -->
+</body>
+</html>
+
+
+<!-- 
+//user(register user)
+//user(update user)
+//userlogin(login user)
+//account(save account)
+//account(update account) -->

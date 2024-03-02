@@ -1,0 +1,58 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Icon Inside Input Field</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./userlogin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body >
+    <h1 id="h1"><mark style="background-color: rgb(89, 0, 255);"> User Registration Form</mark></h1>
+    <span id="emptySpan"></span>
+    <span id="typepassword"></span>
+    
+    <div class="outer">
+      
+        <form class="form" id="regester">
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <input class="registerInputClass" type="text" name="id" placeholder="Enter your id" required id="id" >
+          </div>
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-user"></i></span>
+            <input class="registerInputClass" type="text" name="name" placeholder="Enter your name" required >
+          </div>
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-phone"></i></span>
+            <input oninput="onphNoInput()" class="registerInputClass" type="number" name="number" placeholder="Enter your PH number" required id="phno">
+          </div>
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-envelope thin"></i></span>
+            <input class="registerInputClass" oninput="onEmailInput()" type="email" name="email" placeholder="Enter your email" required  id="emailid">
+          </div>
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input class="registerInputClass" oninput="onPasswordInput()" type="password" name="password" placeholder="Enter your password" required id="passwordinput" ><span class="icon"><i class="fa black fa-eye-slash" id="eye" onmousedown="onclickClosedEye()" onmouseup="onclickOpendEye()"></i></span>
+          </div>
+          <div class="form-input">
+            <span class="icon"><i class="fa fa-lock"></i></span>
+            <input class="registerInputClass" oninput="onPasswordInput()" type="password" name="confirm-password" placeholder="Confirm your password" required id="confirmpassword" ><span class="icon"><i class="fa black fa-eye-slash" id="eye1" onmousedown="onclickClosedEye1()" onmouseup="onclickOpendEye1()"></i></span>
+          </div>    
+          <div class="form-input">
+            <button name="register" value="REGISTER" id="register" onclick="submitButtonOnclick()">REGISTER</button>
+         
+          </div> 
+        </form>
+        <button name="login" value="LOGIN" id="login" onclick="login()" >LOGIN</button>
+        <div>Back to Home Page<span><i class="fa fa-home" style="color: #000000;" id="homebutton" onclick="home()" ></i></span></div>
+      </div>
+ 
+    <script src="./userlogin.js"></script>
+    <script src="./registerJSON.js"></script>
+  </body>
+  </html>
+  
